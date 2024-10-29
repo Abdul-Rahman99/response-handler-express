@@ -1,6 +1,6 @@
 {
   "name": "response-handler-express",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -18,5 +18,9 @@
     "@types/express": "^5.0.0",
     "@types/node": "^22.8.2",
     "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abdul-Rahman99/response-handler-express.git"
   }
 }

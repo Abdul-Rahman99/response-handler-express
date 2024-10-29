@@ -1,8 +1,8 @@
-# ResponseHandler Express
+# Response Handler Express
 
 ## Overview
 
-ResponseHandler is a lightweight, easy-to-use HTTP response handler for Express applications. It provides a set of methods to standardize and simplify response handling for various HTTP status codes, from successful responses to client and server errors.
+Response Handler Express is a lightweight, easy-to-use HTTP response handler for Express applications. It provides a set of methods to standardize and simplify response handling for various HTTP status codes, from successful responses to client and server errors.
 
 ## Features
 
@@ -20,7 +20,7 @@ npm install response-handler-express
 
 ## Usage
 
-Here's a basic example of how to use ResponseHandler in an Express application:
+Here's a basic example of how to use Response Handler in an Express application:
 
 ## Features
 
@@ -91,4 +91,3 @@ This project is licensed under the ISC License.
 ## Author
 
 Abdelrahman Ashraf Osman
-
