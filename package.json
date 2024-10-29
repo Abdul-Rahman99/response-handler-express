@@ -1,6 +1,6 @@
 {
   "name": "response-handler-express",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
