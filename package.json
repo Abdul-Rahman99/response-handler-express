@@ -1,0 +1,22 @@
+{
+  "name": "response-handler-express",
+  "version": "1.0.2",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdelrahman Ashraf Osman",
+  "license": "ISC",
+  "description": "ResponseHandler is a streamlined and customizable HTTP response handler for Node.js applications using Express. It provides a set of standardized methods to handle a full range of HTTP status codes, from successful responses to client and server errors. This package simplifies and unifies response handling, ensuring consistent API responses and improving readability across your codebase.",
+  "dependencies": {
+    "express": "^4.21.1",
+    "response-handler": "file:",
+    "response-handler-express": "file:"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.2",
+    "typescript": "^5.6.3"
+  }
+}
