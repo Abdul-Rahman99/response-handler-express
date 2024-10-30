@@ -83,6 +83,9 @@ app.listen(3000, () => {
 - `badGateway(res, message, data?)`: Sends a 502 Bad Gateway response.
 - `serviceUnavailable(res, message, data?)`: Sends a 503 Service Unavailable response.
 - `gatewayTimeout(res, message, data?)`: Sends a 504 Gateway Timeout response.
+- `logInSuccess(res, message, data?, token?)`: Sends a 200 OK response for successful login including an optional token.
+- `tokenExpired(res, message?)`: Sends a 401 Unauthorized response when a session token is expired.
+- `invalidToken(res, message?)`: Sends a 401 Unauthorized response for an invalid token.
 
 ## License
 
