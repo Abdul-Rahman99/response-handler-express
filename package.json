@@ -1,22 +1,31 @@
 {
   "name": "response-handler-express",
-  "version": "1.0.6",
-  "main": "index.js",
+  "version": "1.1.6",
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/cjs/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json"
   },
   "author": "Abdelrahman Ashraf Osman",
   "license": "ISC",
   "description": "Response Handler is a streamlined and customizable HTTP response handler for Node.js applications using Express. It provides a set of standardized methods to handle a full range of HTTP status codes, from successful responses to client and server errors. This package simplifies and unifies response handling, ensuring consistent API responses and improving readability across your codebase.",
   "dependencies": {
     "express": "^4.21.1",
-    "response-handler": "file:",
     "response-handler-express": "file:"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.8.2",
+    "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   },
   "repository": {

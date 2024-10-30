@@ -1,6 +1,6 @@
 import { Response } from "express";
 
-class ResponseHandler {
+const ResponseHandler = class {
   // 200 OK
   static success(res: Response, message: string, data: any = null): Response {
     return res.status(200).json({
@@ -220,6 +220,7 @@ class ResponseHandler {
       data,
     });
   }
-}
+};
 
 export default ResponseHandler;
+module.exports = ResponseHandler;

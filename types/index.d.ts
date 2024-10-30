@@ -1,0 +1,24 @@
+import { Response } from "express";
+declare const ResponseHandler: {
+    new (): {};
+    success(res: Response, message: string, data?: any): Response;
+    created(res: Response, message: string, data?: any): Response;
+    accepted(res: Response, message: string, data?: any): Response;
+    noContent(res: Response): Response;
+    badRequest(res: Response, message: string, data?: any): Response;
+    unauthorized(res: Response, message: string, data?: any): Response;
+    forbidden(res: Response, message: string, data?: any): Response;
+    notFound(res: Response, message: string, data?: any): Response;
+    conflict(res: Response, message: string, data?: any): Response;
+    gone(res: Response, message: string, data?: any): Response;
+    unprocessableEntity(res: Response, message: string, data?: any): Response;
+    tooManyRequests(res: Response, message: string, data?: any): Response;
+    internalError(res: Response, message: string, data?: any): Response;
+    badGateway(res: Response, message: string, data?: any): Response;
+    serviceUnavailable(res: Response, message: string, data?: any): Response;
+    gatewayTimeout(res: Response, message: string, data?: any): Response;
+    logInSuccess(res: Response, message: string, data?: any, token?: string | null): Response;
+    tokenExpired(res: Response, message?: string, data?: any): Response;
+    invalidToken(res: Response, message?: string, data?: any): Response;
+};
+export default ResponseHandler;
