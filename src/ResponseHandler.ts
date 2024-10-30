@@ -172,6 +172,54 @@ class ResponseHandler {
       data,
     });
   }
+
+  // new authentication and authorization methods
+
+  // 200 OK Login Success with token
+  static logInSuccess(
+    res: Response,
+    message: string,
+    data: any = null,
+    token: string | null = null
+  ): Response {
+    const responseBody: any = {
+      success: true,
+      message,
+      data,
+      token,
+    };
+    if (data === null && token) {
+      responseBody.token = token;
+    }
+
+    return res.status(200).json(responseBody);
+  }
+
+  // 401 Token Expired
+  static tokenExpired(
+    res: Response,
+    message: string = "Session expired, please log in again.",
+    data: any = null
+  ): Response {
+    return res.status(401).json({
+      success: false,
+      message,
+      data,
+    });
+  }
+
+  // 401 Invalid Token
+  static invalidToken(
+    res: Response,
+    message: string = "Invalid token, access denied.",
+    data: any = null
+  ): Response {
+    return res.status(401).json({
+      success: false,
+      message,
+      data,
+    });
+  }
 }
 
 export default ResponseHandler;
